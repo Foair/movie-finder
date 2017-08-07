@@ -18,9 +18,11 @@ http://www.imooc.com/learn/75
 
 主页：http://localhost:8000/
 
-![你的名字。](https://i.loli.net/2017/08/07/5987b51511707.png)
+![Movie Finder.png](https://i.loli.net/2017/08/07/5987bedec092f.png)
 
 电影信息：http://localhost:8000/movie/(id)
+
+![你的名字。](https://i.loli.net/2017/08/07/5987b51511707.png)
 
 ![你的名字。-2](https://i.loli.net/2017/08/07/5987b514d1b04.png)
 
