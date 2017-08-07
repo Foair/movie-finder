@@ -1,0 +1,44 @@
+//- 详情页
+extends ../layout
+//- 从 layout.jade 扩展（继承）
+
+block content
+  .container
+    .row
+      form.form-horizontal(method="post", action="/admin/new")
+        input(type="hidden", name="movie[_id]", value="#{movie._id}")
+        .form-group
+          label.col-sm-2.control-label(for="inputTitle") 电影名字
+          .col-sm-10
+            input#inputTitle.form-control(type="text", name="movie[title]", value="#{movie.title}")
+        .form-group
+          label.col-sm-2.control-label(for="inputDiretor") 导演
+          .col-sm-10
+            input#inputTitle.form-control(type="text", name="movie[director]", value="#{movie.director}")
+        .form-group
+          label.col-sm-2.control-label(for="inputCountry") 国家
+          .col-sm-10
+            input#inputTitle.form-control(type="text", name="movie[country]", value="#{movie.country}")
+        .form-group
+          label.col-sm-2.control-label(for="inputLanguage") 语言
+          .col-sm-10
+            input#inputTitle.form-control(type="text", name="movie[language]", value="#{movie.language}")
+        .form-group
+          label.col-sm-2.control-label(for="inputPoster") 海报地址
+          .col-sm-10
+            input#inputTitle.form-control(type="text", name="movie[poster]", value="#{movie.poster}")
+        .form-group
+          label.col-sm-2.control-label(for="inputFlash") 片源地址
+          .col-sm-10
+            input#inputTitle.form-control(type="text", name="movie[flash]", value="#{movie.flash}")
+        .form-group
+          label.col-sm-2.control-label(for="inputYear") 上映年代
+          .col-sm-10
+            input#inputTitle.form-control(type="text", name="movie[year]", value="#{movie.year}")
+        .form-group
+          label.col-sm-2.control-label(for="inputSummary") 电影简介
+          .col-sm-10
+            input#inputTitle.form-control(type="text", name="movie[summary]", value="#{movie.summary}")
+        .form-group
+          .col-sm-offset-2.col-sm-10
+          button.btn.btn-default(type="submit") 录入
